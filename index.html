@@ -3,70 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Premium Community | Telegram</title>
+    <title>CricInsider | Join The Winning Circle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .glow-button { transition: 0.3s; box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
-        .glow-button:hover { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); transform: translateY(-2px); }
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; background-color: #020617; }
+        .cricket-font { font-family: 'Bebas Neue', cursive; }
+        .hero-gradient { background: radial-gradient(circle at top, #1e293b 0%, #020617 100%); }
+        
+        /* Profile Image Glow */
+        .profile-glow { box-shadow: 0 0 30px rgba(249, 115, 22, 0.5); border: 4px solid rgba(249, 115, 22, 0.8); }
+        
+        /* Button Style & Animation */
+        .btn-glow { box-shadow: 0 0 25px rgba(249, 115, 22, 0.4); transition: all 0.3s ease; }
+        .btn-glow:hover { box-shadow: 0 0 40px rgba(249, 115, 22, 0.7); transform: translateY(-3px); }
+        
+        /* Glassmorphism for Admin Badge */
+        .admin-badge { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
-<body class="text-white min-h-screen flex flex-col items-center justify-center p-4">
+<body class="text-white min-h-screen hero-gradient">
 
-    <div class="max-w-4xl w-full text-center space-y-8">
+    <main class="max-w-4xl mx-auto px-4 py-12 md:py-20 text-center flex flex-col items-center">
         
-        <div class="space-y-4">
-            <span class="bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">
-                🚀 Limited Slots Available
+        <div class="relative mb-8">
+            <img src="https://via.placeholder.com/150" alt="Admin Profile" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover profile-glow">
+            
+            <div class="absolute bottom-1 right-1 bg-blue-500 rounded-full p-2 border-2 border-[#020617]">
+                <i class="fas fa-check text-white text-xl"></i>
+            </div>
+        </div>
+
+        <div class="admin-badge px-6 py-2 rounded-full mb-6 flex items-center gap-3">
+            <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
-                Master the Market with <span class="text-blue-500">Premium Insights</span>
-            </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-                Join 50,000+ members receiving daily signals, educational content, and exclusive updates directly on Telegram.
+            <p class="text-sm font-semibold tracking-wide text-gray-200">
+                Analysis by: <span class="text-orange-400 font-bold text-base">Rahul "CricGuru" Sharma</span>
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 my-10">
-            <div class="glass p-6 rounded-2xl">
-                <i class="fas fa-chart-line text-3xl text-blue-500 mb-4"></i>
-                <h3 class="font-bold text-xl">Daily Signals</h3>
-                <p class="text-gray-400 text-sm mt-2">High accuracy signals with deep market analysis.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <i class="fas fa-shield-alt text-3xl text-green-500 mb-4"></i>
-                <h3 class="font-bold text-xl">Verified Results</h3>
-                <p class="text-gray-400 text-sm mt-2">Transparency is our priority. No fake promises.</p>
-            </div>
-            <div class="glass p-6 rounded-2xl">
-                <i class="fas fa-users text-3xl text-purple-500 mb-4"></i>
-                <h3 class="font-bold text-xl">24/7 Support</h3>
-                <p class="text-gray-400 text-sm mt-2">Active community to help you grow every day.</p>
-            </div>
-        </div>
+        <h1 class="cricket-font text-5xl md:text-8xl mb-5 leading-none tracking-tight">
+            STOP GUESSING. <br> 
+            <span class="text-orange-500">START WINNING.</span>
+        </h1>
+        
+        <p class="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+            Get exclusive access to my personal <span class="text-white font-semibold">Toss Predictions, Match Analysis, and Grand League</span> teams. 100% Transparency.
+        </p>
 
-        <div class="space-y-6">
-            <a href="https://t.me/YOUR_CHANNEL_USERNAME" class="glow-button inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300">
-                <i class="fab fa-telegram-plane mr-2"></i> Join Telegram Now — It's FREE
+        <div class="w-full max-w-sm mb-16">
+            <a href="https://t.me/YOUR_CRICKET_CHANNEL" class="btn-glow block bg-orange-500 hover:bg-orange-600 text-white cricket-font text-3xl px-8 py-5 rounded-full transition flex items-center justify-center">
+                <i class="fab fa-telegram mr-3 text-4xl"></i> JOIN MY FREE CHANNEL
             </a>
-            <p class="text-sm text-gray-500">No credit card required. Cancel anytime.</p>
+            <p class="text-sm text-green-400 mt-4 font-medium">
+                <i class="fas fa-users mr-1"></i> Join 125,000+ Winners Today
+            </p>
         </div>
 
-        <div class="pt-10 border-t border-gray-800">
-            <p class="text-sm text-gray-400 mb-4 uppercase tracking-widest">Featured In & Trusted By</p>
-            <div class="flex flex-wrap justify-center gap-8 opacity-50 grayscale">
-                <span class="text-xl font-bold">BINANCE</span>
-                <span class="text-xl font-bold">FORBES</span>
-                <span class="text-xl font-bold">TRADINGVIEW</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left">
+            <div class="admin-badge p-6 rounded-2xl hover:border-orange-500/50 transition duration-300">
+                <i class="fas fa-chart-pie text-2xl text-orange-500 mb-3"></i>
+                <h3 class="font-bold text-lg text-white">Deep Data Analysis</h3>
+                <p class="text-gray-400 text-sm mt-1">Pitch reports, player battles, and historical data used for every prediction.</p>
+            </div>
+
+            <div class="admin-badge p-6 rounded-2xl hover:border-orange-500/50 transition duration-300">
+                <i class="fas fa-history text-2xl text-blue-500 mb-3"></i>
+                <h3 class="font-bold text-lg text-white">Proven Track Record</h3>
+                <p class="text-gray-400 text-sm mt-1">Check our pinned posts for open proof of last season's 90%+ accuracy.</p>
+            </div>
+
+            <div class="admin-badge p-6 rounded-2xl hover:border-orange-500/50 transition duration-300">
+                <i class="fas fa-gift text-2xl text-green-500 mb-3"></i>
+                <h3 class="font-bold text-lg text-white">Free Fantasy Teams</h3>
+                <p class="text-gray-400 text-sm mt-1">Small League (H2H) and risky Grand League teams provided before deadline.</p>
             </div>
         </div>
-    </div>
+    </main>
 
-    <footer class="mt-20 text-gray-600 text-sm">
-        © 2026 YourBrand Name. All rights reserved.
+    <footer class="py-10 text-center border-t border-gray-800/50 bg-[#010411]">
+        <p class="text-gray-600 text-xs px-4">
+            Disclaimer: This channel is for educational purposes only. We do not support gambling.
+        </p>
+        <p class="mt-2 text-gray-700 text-xs cricket-font tracking-widest">© 2026 CRICINSIDER MEDIA</p>
     </footer>
 
 </body>
